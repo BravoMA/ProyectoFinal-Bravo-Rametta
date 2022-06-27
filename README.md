@@ -25,15 +25,12 @@ El visitante puede buscar en su contenido para interiorizarse, sin embargo para 
 Muestra información del nombre de la comida/postre, autor, fecha y fotos de la receta sugerida.
 
 •	Usuarios y perfiles
-El visitante al blog, puede agregarse como usuario del blog ingresando como datos obligatorios el nombre de usuario, contraseña, mail y si lo desea su nombre y apellido
-Solamente el l administrador (admin) puede agregar una imagen o foto a los usuarios existentes.
-Para cada usuario, quedará registrada la fecha de su última visita que podrá ser consultada en el perfil del usuario respectivo. 
+El visitante al blog, puede agregarse como usuario del blog ingresando como datos obligatorios el nombre de usuario, contraseña, mail y si lo desea su nombre y apellido. 
+
 •	Mensajes entre usuarios
 Dentro de nuestro blog, cada usuario tiene la posibilidad de enviar mensajes o sugerencias a casillas particulares que poseen otros usuarios y que solo ellos podrán ver desde dentro de su perfil con una bandeja de entrada y salida.
 
 •	 Estructura o layuot del blog
 Nuestro blog da la posibilidad de ingresar a las diferentes acciones que se pueden realizar dentro del mismo:
 1.	En la barra superior a la izquierda con las opciones Inicio, Posteos y Acerca del Blog.
-2.	En la barra superior a la derecha con las opciones del usuario, registrando al nuevo usuario o permitiendo el ingreso con su nombre y clave existente, mostrando su nombre e imagen si existiera cargada, teniendo la posibilidad de acceder a su perfil y administrar sus mensajes enviados/recibidos y cerrar su cesión.
-
-•	 Tecnologías usadas: Python con framework Django y HTML para los templates.
+2.	En la barra superior a la derecha con las opciones del usuario, registrando al nuevo usuario o permitiendo el ingreso con su nombre y clave existente, mostrando su nombre, teniendo la posibilidad de acceder a su perfil y administrar sus mensajes enviados/recibidos y cerrar su cesión.
