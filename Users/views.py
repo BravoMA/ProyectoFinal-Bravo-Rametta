@@ -38,7 +38,7 @@ def login_request(request):
             else:
                         return render(request,"Users/login.html" ,  {"form":form, "mensaje":"Error, the entered data is invalid. Please, login again"})  #esto se hace si no se cumple la condicion de que el formulario sea valido
 
-      form = AuthenticationForm()    #si no viene por POST, tenemos que mostrar un formulario vacio para que se ingrese
+      form = UserLoginForm()    #si no viene por POST, tenemos que mostrar un formulario vacio para que se ingrese
       return render(request,"Users/login.html", {'form':form})
 
 # y despues creamos el Logout directamente en urls.py

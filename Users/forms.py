@@ -2,14 +2,17 @@ from django import forms
 from .models import *
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django.contrib.auth.forms import AuthenticationForm
 
+class UserLoginForm(AuthenticationForm):
+    username = forms.CharField(label='Usuario')
 
 class UserRegisterForm(UserCreationForm):
 
-    username = forms.CharField()
-    email = forms.EmailField()
+    username = forms.CharField(label='Usuario')
+    email = forms.EmailField(label='E-mail')
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
-    password2 = forms.CharField(label='Repeat password', widget=forms.PasswordInput)
+    password2 = forms.CharField(label='Repita la Password', widget=forms.PasswordInput)
 
     class Meta:
         model = User
@@ -19,12 +22,12 @@ class UserRegisterForm(UserCreationForm):
 
 
 class UserEditForm(UserCreationForm):
-    username = forms.CharField(label='Username')
-    email = forms.EmailField(label='Email')
-    first_name = forms.CharField(label='Name', required=False)
-    last_name = forms.CharField(label='Lastname', required=False) 
-    password1 = forms.CharField(label='New Password', widget=forms.PasswordInput)
-    password2 = forms.CharField(label='Repeat password', widget=forms.PasswordInput)
+    username = forms.CharField(label='Usuario')
+    email = forms.EmailField(label='E-mail')
+    first_name = forms.CharField(label='Nombre', required=False)
+    last_name = forms.CharField(label='Apellido', required=False) 
+    password1 = forms.CharField(label='Nueva Password', widget=forms.PasswordInput)
+    password2 = forms.CharField(label='Repita la Password', widget=forms.PasswordInput)
 
     class Meta:
         model = User
